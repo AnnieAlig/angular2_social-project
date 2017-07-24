@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let album of albums">
+    <a routerLink="/albums/{{album.id}}">
+      <i class="ti-instagram"></i>
+      <span class="text-success">{{album.title}}</span>
+    </a>
+    
+  </li>
+</ul>

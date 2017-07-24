@@ -1,0 +1,54 @@
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+}
+
+posts{
+    float:left;
+    width: 40%;
+}
+albums{
+    float: right;
+    width: 50%;
+}
+
+.nav-tabs-navigation>section {
+	display: none;
+	padding: 15px;
+	background: #fff;
+
+}
+.nav-tabs-navigation>input {
+	display: none;
+	position: absolute;
+}
+.nav-tabs-navigation>label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #aaa;
+	border: 0px solid #ddd;
+	border-width: 1px 1px 1px 1px;
+	background: #f1f1f1;
+	border-radius: 3px 3px 0 0;
+}
+.nav-tabs-navigation>label:hover {
+	color: #888;
+	cursor: pointer;
+}
+.nav-tabs-navigation>input:checked+label {
+	color: #555;
+	border-top: 1px solid #009933;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+
+#posts:checked~#content-posts, #albums:checked~#content-albums {
+	display: block;
+}
+#content-albums{
+	position: relative;
+	left: -520px;
+}

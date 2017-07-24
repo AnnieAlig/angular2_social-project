@@ -1,0 +1,19 @@
+<div *ngIf="!posts"><i class="fa fa-spinner fa-spin fa-3x"></i></div>
+<ul>
+  <li *ngFor="let post of posts"> 
+    <h3 class="post_title"><a routerLink="/post/{{post.id}}" class="text-success">{{post.title}}</a></h3>
+    <p class="post_body">{{post.body}}</p>
+    
+     <div class="post_footer"> 
+        <like></like>
+     </div>
+    
+  </li>
+</ul>
+<div class="add-post_wrapper">
+  <div class="add-post" *ngIf="userId === CurrentUser">
+    <textarea class="form-control"  #newPostTitle cols="50" rows="1" placeholder="Enter post title"></textarea>
+    <textarea class="form-control"  #newPostBody cols="50" rows="3" placeholder="Enter post body"></textarea>
+    <button class="btn btn-success" (click)="addNewPost( newPostTitle, newPostBody )" >Add post</button>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div *ngIf="!user"><i class="fa fa-spinner fa-spin fa-3x"></i></div>
+<div class="wrap">
+  <div *ngIf="user">
+  <h1>
+    {{user.name}} ({{user.username}})
+  </h1>
+
+<div class="nav-tabs-navigation">
+    <input id="posts" type="radio" name="tabs" checked>
+    <label for="posts" title="posts">View posts</label>
+       
+    <input id="albums" type="radio" name="tabs">
+    <label for="albums" title="albums">View albums</label>
+
+    <section id="content-posts">
+      <div class="tab-pane active" id="posts">
+        <posts [userId]="id"></posts>
+    </div>
+    </section>
+
+    <section id="content-albums">
+      <div class="tab-pane active" id="albums">
+        <albums [userId]="id"></albums>
+    </div>
+    </section>
+ 
+</div>
+
+
+
+

@@ -1,0 +1,40 @@
+.bigImg{
+    display: block;
+    position: fixed;
+    top: 160px;
+    right: 0;
+}
+.bigImg img{
+    width: 100%;
+    position: relative;
+    display: block;
+    border-radius: 20px;
+}
+.littlePhoto{
+    cursor: pointer;
+}
+.bigImg button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    border-radius: 50%;
+}
+
+.invisible{
+    box-shadow: 0 5px 50px 20px #000;
+    display: block;
+}
+.container{    
+    box-shadow: 0 5px 50px -20px #000;
+    display: block;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.all_photos{
+    width: 900px;
+    margin: 0 auto;
+}

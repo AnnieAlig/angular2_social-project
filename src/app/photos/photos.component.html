@@ -1,0 +1,12 @@
+<div *ngIf="!photos"><i class="fa fa-spinner fa-spin fa-3x"></i></div>
+
+<div *ngIf="photos" class="all_photos">
+    <img class="littlePhoto" *ngFor="let photo of photos" src="{{photo.thumbnailUrl}}" alt="{{photo.title}}" (click)="choosePhoto(photo.url)" (click)="toggle()">
+    <div class="bigImg" *ngIf="chosenPhoto">
+        <div class="container" [ngClass]="{invisible:visibility}">
+            <img src="{{chosenPhoto}}" alt="big photo">
+            <button class="btn btn-danger" (click)="toggle()">X</button>
+        </div>
+    </div> 
+
+</div>

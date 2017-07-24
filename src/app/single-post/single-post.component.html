@@ -1,0 +1,13 @@
+
+<div *ngIf="!currentPost"><i class="fa fa-spinner fa-spin fa-3x"></i></div>
+<h2>The post</h2>
+<p class="caption">discover the post you've chosen</p>
+<div *ngIf="currentPost" class="current-post">
+    <h3>{{currentPost.title}}</h3>
+    <p class="post_body">{{currentPost.body}}</p>
+    <button (click) ="toggle()" class="btn btn-info">Show comments</button>
+
+    <div class="comments_container" [ngClass]="{invisible:visibility}">
+       <comments></comments>
+    </div>
+</div>

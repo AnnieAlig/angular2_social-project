@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+.caption{
+    color: rgb(154, 154, 154); 
+    text-align: center;  
+}

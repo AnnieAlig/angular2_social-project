@@ -1,0 +1,17 @@
+<h2>Here are your comments</h2>
+<p class="caption">discover the comments for this post</p>
+<div *ngIf="!comments"><i class="fa fa-spinner fa-spin fa-3x"></i></div>
+
+<ul>
+  <li *ngFor="let comment of comments">
+    <h4 class="comment_name">{{comment.name}}</h4>
+    <p class="comment_body">{{comment.body}}</p>
+    <p class="comment_author">Added by: {{comment.email}}</p>
+    <div class="comment_footer"> 
+      <like></like>
+    </div>
+  </li>
+</ul>
+
+
+

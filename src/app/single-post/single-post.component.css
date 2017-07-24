@@ -1,0 +1,48 @@
+
+.current-post{
+    width: 450px;
+    max-height: 350px;
+    background-color: rgba(44, 244, 14, .1);
+    padding: 15px;
+    box-shadow: 1px 1px 2px lightslategray;
+    border-radius: 5px;
+    margin: 10px auto 10px 50px;
+    position: relative;
+}
+h2, .caption{
+    margin: 0 50px;
+}
+.caption{
+    color: rgb(154, 154, 154);   
+}
+h3{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 2px solid rgb(153, 153, 153);
+    text-transform: capitalize;
+}
+
+button{
+    position: absolute;
+    bottom: 10px;
+    left: 160px;
+}
+.post_body{
+    margin: 0 20px;
+}
+.post_body::first-letter{
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 36px;
+}
+.post_body::after{
+    content: '.';
+}
+
+.comments_container{
+    position: relative;
+    top: -292px;
+    left: 500px;
+
+}
